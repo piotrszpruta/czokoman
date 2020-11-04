@@ -24,6 +24,11 @@
 
         function playAudio(path) {
             howl = new Howl({
+                usingWebAudio: false,
+                html5: true,
+                mute: false,
+                webAudio: false,
+                volume: 1,
                 src: [path],
                 preload: true
             });
