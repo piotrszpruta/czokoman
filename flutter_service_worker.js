@@ -68,7 +68,9 @@ const CORE = [
     "index.html",
     "assets/NOTICES",
     "assets/AssetManifest.json",
-    "assets/FontManifest.json"
+    "assets/FontManifest.json",
+    "assets/images",
+    "assets/"
 ];
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
