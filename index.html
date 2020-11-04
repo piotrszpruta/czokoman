@@ -22,11 +22,13 @@
         var howl;
 
         function playAudio(path) {
-            howl = new Howl({
+            howl = new Howler({
                 src: [path],
                 preload: true
             });
+            howl.autoUnlock = false;
             howl.playSafe();
+
         }
     </script>
 </head>
