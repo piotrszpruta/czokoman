@@ -20,13 +20,14 @@
     <script src="https://cdn.jsdelivr.net/npm/howler@2.1.3/dist/howler.min.js"></script>
     <script type="application/javascript">
         var howl;
+        Howler.autoUnlock = false;
 
         function playAudio(path) {
             howl = new Howl({
                 src: [path],
                 preload: true
             });
-            howl.autoUnlock = false;
+
             howl.play();
 
         }
