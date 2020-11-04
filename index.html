@@ -19,13 +19,14 @@
     <link rel="manifest" href="manifest.json">
     <script src="https://cdn.jsdelivr.net/npm/howler@2.1.3/dist/howler.min.js"></script>
     <script type="application/javascript">
-        var audio;
+        var howl;
 
         function playAudio(path) {
-            audio = new Howl({
-                src: [path]
+            howl = new Howl({
+                src: [path],
+                preload: true
             });
-            audio.play();
+            howl.playSafe();
         }
     </script>
 </head>
