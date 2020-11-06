@@ -19,22 +19,24 @@
     <link rel="manifest" href="manifest.json">
     <script src="https://cdn.jsdelivr.net/npm/howler@2.1.3/dist/howler.min.js"></script>
     <script type="application/javascript">
-        var howl;
+        var audio;
         Howler.autoUnlock = false;
-
         function playAudio(path) {
-            howl = new Howl({
+            audio = new Howl({
                 usingWebAudio: false,
                 html5: true,
                 mute: false,
                 webAudio: false,
                 volume: 1,
                 src: [path],
-                preload: true
+                preload: true,
+                src: [path]
             });
+            audio.play();
+        }
 
-            howl.play();
-
+        function stopAudio() {
+            audio.stop();
         }
     </script>
 </head>
@@ -46,7 +48,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('flutter-first-frame', function() {
-                navigator.serviceWorker.register('flutter_service_worker.js?v=2959881815');
+                navigator.serviceWorker.register('flutter_service_worker.js?v=438771691');
             });
         }
     </script>
