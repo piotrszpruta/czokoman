@@ -31,7 +31,7 @@
                 src: [path],
                 preload: true,
                 src: [path],
-                onloaderror: (error) => alert(error),
+                onloaderror: (error) => alert(error)
             });
             audio.play();
         }
@@ -49,7 +49,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('flutter-first-frame', function() {
-                navigator.serviceWorker.register('flutter_service_worker.js?v=3181564621');
+                navigator.serviceWorker.register('flutter_service_worker.js?v=2245801926');
             });
         }
     </script>
