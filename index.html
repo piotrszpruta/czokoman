@@ -30,7 +30,11 @@
                 volume: 1,
                 src: [path],
                 preload: true,
-                src: [path]
+                src: [path],
+                onplayerror: () => alert('error'),
+                onloaderror: () => alert('load error'),
+                onload: () => alert('load'),
+                onplay: () => alert('playin...'),
             });
             audio.play();
         }
