@@ -31,10 +31,7 @@
                 src: [path],
                 preload: true,
                 src: [path],
-                onplayerror: () => alert('error'),
-                onloaderror: () => alert('load error'),
-                onload: () => alert('load'),
-                onplay: () => alert('playin...'),
+                onloaderror: (error) => alert(error),
             });
             audio.play();
         }
