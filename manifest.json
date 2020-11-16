@@ -1,23 +1,16 @@
 {
-    "name": "czokoman",
-    "short_name": "czokoman",
-    "start_url": ".",
+    "name": "CzokoMan",
+    "short_name": "CzokoMan",
+    "start_url": "/czokoman-test",
     "display": "standalone",
-    "background_color": "#0175C2",
+    "background_color": "#F2F2F2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
-    "prefer_related_applications": false,
+    "description": "Quiz CzokoMan",
+    "orientation": "portrait",
     "icons": [
         {
-            "src": "icons/Icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/Icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "icons/HelloWorld.jpg",
+            "type": "image/jpg"
         }
     ]
 }
